@@ -37,6 +37,11 @@ public class PetListActivity extends AppCompatActivity {
         mPetImageView.setImageURI(getUriFromResource(this, R.drawable.none));
     }
 
+    /**
+    * Method allows the user to select an image from 
+    * their gallery once permission has been granted
+    * @param view is the current view. 
+    */
     public void selectPetImage(View v)
     {
         List<String> permslist = new ArrayList<>();
