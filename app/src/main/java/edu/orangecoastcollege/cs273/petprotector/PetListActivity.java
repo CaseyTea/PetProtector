@@ -21,7 +21,7 @@ import java.util.List;
 public class PetListActivity extends AppCompatActivity {
 
     private ImageView mPetImageView;
-    private Uri imageUri;
+    private Uri imageUri; // Image from the user's device to be uploaded 
 
     // Constant for permissions:
     private static final int GRANTED = PackageManager.PERMISSION_GRANTED;
@@ -42,6 +42,8 @@ public class PetListActivity extends AppCompatActivity {
         List<String> permslist = new ArrayList<>();
 
         // Check each permission individually
+        
+        // Permissions needed to access user's data
 
         int hasCameraPerm = ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA);
         if (hasCameraPerm == DENIED)
